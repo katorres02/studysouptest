@@ -16,7 +16,10 @@ module MailgunDev
       :to => email_to,
       :subject => subject,
       :text => text,
-      "o:campaign" => campaign_id
+      "o:campaign" => campaign_id,
+      "o:tracking"=>"yes",
+      "o:tracking-opens"=>"yes",
+      "o:tracking-clicks"=>"yes"
     end
 
     def campaigns
