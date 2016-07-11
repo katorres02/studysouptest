@@ -1,0 +1,22 @@
+<%=link_to "back", root_path %>
+<h3>Emails sent to <%="#{params[:email]}"%> </h3>
+
+<table>
+  <thead>
+  <tr>
+    <th>From</th>
+    <th>Subject</th>
+    <th>Message_id</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <%- @emails.each do |email| %>
+    <tr>
+      <td><%=email['from']%></td>
+      <td><%=email['subject']%></td>
+      <td><%=email['message-id']%></td>
+    </tr>
+  <%end%>
+  </tbody>
+</table>

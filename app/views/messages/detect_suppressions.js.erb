@@ -1,0 +1,6 @@
+if('<%=@status %>' == '200'){
+    alert("This email address is listed in a suppressions list");
+    $(".form_message").prop("disabled", true);
+}else{
+    $(".form_message").prop("disabled", false);
+}
