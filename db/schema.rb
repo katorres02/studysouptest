@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160711014018) do
+ActiveRecord::Schema.define(version: 20160711051540) do
 
   create_table "campaigns", force: :cascade do |t|
     t.string   "name"
@@ -25,6 +25,16 @@ ActiveRecord::Schema.define(version: 20160711014018) do
     t.string   "email"
     t.text     "message"
     t.string   "campaign_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "webhooks", force: :cascade do |t|
+    t.string   "event"
+    t.string   "recipient"
+    t.string   "domain"
+    t.string   "campaign_id"
+    t.string   "user_agent"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end

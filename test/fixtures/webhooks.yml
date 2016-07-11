@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  event: MyString
+  recipient: MyString
+  domain: MyString
+  campaign_id: MyString
+  user_agent: MyString
+
+two:
+  event: MyString
+  recipient: MyString
+  domain: MyString
+  campaign_id: MyString
+  user_agent: MyString
