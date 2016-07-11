@@ -1,5 +1,6 @@
 class WebhooksController < ApplicationController
   before_action :set_webhook, only: [:destroy]
+  protect_from_forgery
 
   # GET /webhooks
   # GET /webhooks.json
